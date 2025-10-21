@@ -1,0 +1,257 @@
+/* === Global Reset & Overflow Protection === */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: rgb(238, 240, 255);
+  font-family: 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* === Top Bar === */
+.top_bar5 {
+  background-color: rgba(130, 147, 251, 1);
+  color: white;
+  padding: 0 20px;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid white;
+}
+
+.top_bar_logo5 img {
+  height: 150px;
+  display: block;
+}
+
+.myShipment5 {
+  text-align: right;
+  font-family: 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* === Main Content Layout === */
+.track6 {
+  flex-grow: 1; /* Allows this section to fill vertical space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.shipmentDetails6 {
+  width: 100%;
+  max-width: 1000px; /* Use a reasonable max-width */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* === Header Containers === */
+.h2-container6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 300px; /* Adjusted for better spacing */
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.h2-container6 h1 {
+  margin: 0;
+  white-space: nowrap;
+  font-family: 'Segoe UI', sans-serif;
+  color: rgba(130, 147, 251, 1);
+}
+
+.h2-container6 a,
+.h2-container6_1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.h2-container6 a:hover {
+  text-decoration: underline;
+  color: #555;
+}
+
+/* === Buttons === */
+.green, .red {
+  background-color: lightgreen;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1em;
+  border: none;
+}
+
+.red {
+  background-color: red;
+}
+
+/* === Form Layout === */
+.scheduling-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 30px;
+  font-size: 1.2em;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 300px; /* Ensures a minimum width for the column */
+}
+
+/* === Input Field Groups === */
+.input-field-group {
+  border: 2px solid #4b0082;
+  border-radius: 8px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  gap: 15px; /* Spacing between icon and input */
+}
+
+.input-field-group input,
+.input-field-group select {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #4b0082;
+  font-size: 1em;
+  flex-grow: 1; /* Fills remaining space */
+}
+
+.input-field-group .field-icon {
+  font-size: 1.5em;
+  color: #4b0082;
+}
+
+/* === Submit Button === */
+.button-container {
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button-container button {
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: rgba(130, 147, 251, 1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 300px;
+}
+
+.button-container .red {
+  background-color: red;
+}
+
+.button-container .red:hover {
+  background-color: darkred;
+}
+
+.button-container .green {
+  background-color: lightgreen;
+}
+
+.button-container .green:hover {
+  background-color: forestgreen;
+  color: white;
+}
+
+/* === Footer === */
+.footer3 {
+  text-align: center;
+}
+
+/* === Media Queries === */
+@media (max-width: 1600px) {
+  .shipmentDetails6 {
+    max-width: 1300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top_bar5 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .top_bar_logo5 img {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .myShipment5 {
+    margin: 0;
+  }
+
+  .myShipment5 h1 {
+    font-size: 25px;
+    margin: 5px 0;
+  }
+
+  .track6 {
+    padding: 10px;
+  }
+
+  .shipmentDetails6 {
+    padding: 0 10px;
+  }
+
+  .h2-container6{
+    gap: 10rem;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .h2-container6_1 {
+    gap: 1rem;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .scheduling-form-container {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .input-field-group {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .h2-container6,
+  .h2-container6_1 {
+    gap: 1rem;
+    font-size: 10px;
+  }
+}

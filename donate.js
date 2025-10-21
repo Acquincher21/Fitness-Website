@@ -1,0 +1,1 @@
+document.getElementById('attachment').style.padding = '8px';

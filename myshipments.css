@@ -1,0 +1,559 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.top_bar3 {
+  background-color: rgba(130, 147, 251, 1);
+  color: white;
+  padding: 0px 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* changed from flex-end to center for better vertical alignment */
+  border-bottom: 2px solid white;
+  flex: 0 0 auto; /* fixed size header */
+}
+
+.top_bar_logo3 img {
+  height: 200px;
+  display: block;
+}
+
+.myShipment {
+  margin-right: 20px;
+  font-family: 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.track {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.shipmentID {
+  margin-left: 25px;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: -15px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.details1 {
+  background-color: darkgray;
+  color: black;
+  font-weight: bold;
+  padding: 15px;
+  margin: 0px;
+  width: 580px;
+  margin-left: 20px;
+}
+
+.area {
+  justify-content: space-between;
+  background-color: darkgray;
+  align-items: center;
+}
+
+.details input {
+  padding: 8px;
+  width: 550px;
+  font-size: 16px;
+}
+
+.details h2 {
+  margin: 0;
+}
+
+.track img {
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.gap {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: 65px;
+}
+
+.area {
+  display: flex;
+  margin-top: 4px;
+}
+
+.shipmentDetails {
+  flex: 1;                    
+  margin: 0;                   
+  height: 650px;
+  background-color: rgb(238, 240, 255);
+  font-size: 18px;
+  color: rgba(130, 147, 251, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-sizing: border-box;
+  margin-top: -20px;
+  margin-left: 95px;
+}
+
+.header-row {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  background-color: lightgrey;
+  padding: 22px;
+  margin-top: 34px;
+}
+
+.row p {
+  margin: 0;
+  width: 48%;
+  font-weight: 500;
+  margin-left: 200px;
+}
+
+.des{
+  color: black;
+}
+
+.ongoing{
+  color: green;
+}
+
+.map {
+  margin: 0;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 470px;
+  margin-top: 15px;
+  margin-left: -70px;
+}
+
+
+@media (max-width: 1600px) {
+  .grid-container {
+    max-width: 800px;
+  }
+
+  .shipmentDetails {
+    max-width: 1000px;
+    margin: 0;
+    margin-left: 95px;
+    margin-top: -20px;
+  }
+
+  .map {
+    gap: 300px;
+    margin-left: 130px;
+  }
+
+  .info {
+      display: flex;
+      margin-left: 100px;
+      gap: 300px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.top_bar3 {
+  background-color: rgba(130, 147, 251, 1);
+  color: white;
+  padding: 0px 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* changed from flex-end to center for better vertical alignment */
+  border-bottom: 2px solid white;
+  flex: 0 0 auto; /* fixed size header */
+}
+
+.top_bar_logo3 img {
+  height: 200px;
+  display: block;
+}
+
+.myShipment {
+  margin-right: 20px;
+  font-family: 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.track {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.shipmentID {
+  margin-left: 25px;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: -15px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.details1 {
+  background-color: darkgray;
+  color: black;
+  font-weight: bold;
+  padding: 15px;
+  margin: 0px;
+  width: 580px;
+  margin-left: 20px;
+}
+
+.area {
+  justify-content: space-between;
+  background-color: darkgray;
+  align-items: center;
+}
+
+.details input {
+  padding: 8px;
+  width: 550px;
+  font-size: 16px;
+}
+
+.details h2 {
+  margin: 0;
+}
+
+.track img {
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.gap {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: 65px;
+}
+
+.area {
+  display: flex;
+  margin-top: 4px;
+}
+
+.shipmentDetails {
+  flex: 1;                    
+  margin: 0;                   
+  height: 650px;
+  background-color: rgb(238, 240, 255);
+  font-size: 18px;
+  color: rgba(130, 147, 251, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-sizing: border-box;
+  margin-top: -20px;
+  margin-left: 95px;
+}
+
+.header-row {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  background-color: lightgrey;
+  padding: 22px;
+  margin-top: 34px;
+}
+
+.row p {
+  margin: 0;
+  width: 48%;
+  font-weight: 500;
+  margin-left: 200px;
+}
+
+.des{
+  color: black;
+}
+
+.ongoing{
+  color: green;
+}
+
+.map {
+  margin: 0;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 470px;
+  margin-top: 15px;
+  margin-left: -70px;
+}
+
+
+@media (max-width: 1600px) {
+  .grid-container {
+    max-width: 800px;
+  }
+
+  .shipmentDetails {
+    max-width: 1000px;
+    margin: 0;
+    margin-left: 95px;
+    margin-top: -20px;
+  }
+
+  .map {
+    gap: 300px;
+    margin-left: 130px;
+  }
+
+  .info {
+      display: flex;
+      margin-left: 100px;
+      gap: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Top bar styles */
+  .top_bar3 {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    text-align: center;
+  }
+
+  .top_bar_logo3 img {
+    height: 120px;
+  }
+
+  .myShipment {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  /* Track layout stack vertically */
+  .track {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 0;
+    gap: 20px;
+  }
+
+  /* Left side */
+  .grid-container {
+    width: 100% !important;      /* FIX: full width */
+    margin: 0 !important;        /* FIX: remove left margin */
+    padding: 0;
+  }
+
+  .details1,
+  .details input {
+    width: 292px;
+    box-sizing: border-box;
+  }
+
+
+  .shipmentID {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .gap {
+    margin-left: 0;
+  }
+
+  .area {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .track img {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Right side */
+  .shipmentDetails {
+    margin: 0;
+    margin-left: -430px;
+    margin-top: -20px;
+  }
+
+  .map {
+    gap: 80px;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: -2px;
+  }
+
+  .row {
+    display: flex;
+    padding: 18px;
+    margin-top: 42px;
+  }
+
+  .row p {
+    width: 100%;
+    margin-left: 50px;
+    margin-top: 8px;
+  }
+
+  .header-row {
+    gap: 100px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* TOP BAR */
+  .top_bar3 {
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .top_bar_logo3 img {
+    height: 80px;
+  }
+
+  .myShipment h1 {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+
+  /* TRACK SECTION */
+  .track {
+    padding: 10px;
+  }
+
+  .grid-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .details {
+    width: 100%;
+  }
+
+  .details input {
+    font-size: 14px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .shipmentID {
+    font-size: 14px;
+    margin: 10px 0 5px 0;
+  }
+
+  .details1 {
+    width: 70%;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+
+  .area {
+    font-display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .track img {
+    width: 24px;
+    height: 24px;
+    align-self: flex-end;
+  }
+
+  /* SHIPMENT DETAILS */
+  .shipmentDetails {
+    display: none;
+  }
+
+  .map {
+    font-size: 14px;
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    max-width: 200px;
+  }
+
+  .status {
+    flex-direction: column;
+    font-size: 14px;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .info {
+    display: flex;
+    gap: 25px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

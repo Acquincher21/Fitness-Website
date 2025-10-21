@@ -1,0 +1,250 @@
+:root {
+    --color-primary: #8293fb;
+    --color-primary-dark: #6a7fec;
+    --color-secondary: #6c757d;
+    --color-background: #f4f6f9;
+    --color-card-bg: #ffffff;
+    --color-border: #dee2e6;
+    --color-success: #28a745;
+    --color-error: #dc3545;
+    --color-heading: #343a40;
+    --font-family-sans: 'Roboto', sans-serif;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --max-width-content: 550px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--font-family-sans);
+    background-color: var(--color-background);
+    color: var(--color-secondary);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--max-width-content);
+    margin: var(--spacing-lg) auto;
+    padding: 0 var(--spacing-md);
+    flex-grow: 1;
+}
+
+.top_bar6 {
+    background-color: rgba(130, 147, 251, 1);
+    color: white;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_bar_logo6 img {
+    height: 200px;
+    width: auto;
+    display: block;
+}
+
+.myRate6 {
+    text-align: left; 
+    padding-bottom: 5px;
+}
+
+.myRate6 h1 {
+    font-size: 40px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+
+.card {
+    background: var(--color-card-bg);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: var(--spacing-lg);
+}
+
+.ratetitle{
+    font-size: 1.75rem;
+    color: var(--color-heading);
+    margin-bottom: var(--spacing-lg);
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: var(--spacing-md);
+}
+
+.section-heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-heading);
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: 5px;
+    border-bottom: 1px dashed var(--color-border);
+}
+
+.detail-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px dotted #e9ecef;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.label {
+    font-weight: 500;
+    color: var(--color-secondary);
+}
+
+.value {
+    font-weight: 700;
+    color: var(--color-heading);
+    text-align: right;
+}
+
+.type-tags {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.rate-summary {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md) 0;
+}
+
+.rate-summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) 0;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: var(--color-border);
+    margin: var(--spacing-md) 0;
+}
+
+.total-rate .label {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.total-rate .value-highlight {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--color-success);
+}
+
+.button {
+    width: 100%;
+    padding: 12px;
+    margin-top: var(--spacing-lg);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.primary-button {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: var(--color-primary-dark);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.error-card {
+    border: 1px solid var(--color-error);
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.1);
+}
+
+.error-card h2 {
+    color: var(--color-error);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.5rem;
+}
+
+.error-list ul {
+    list-style-type: '❌ ';
+    padding-left: 1.5rem;
+}
+
+.error-list li {
+    color: var(--color-error);
+    padding: var(--spacing-sm) 0;
+    font-size: 1rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: var(--spacing-lg);
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .top_bar6 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: var(--spacing-md);
+    }
+    
+    .top_bar_logo6 img {
+        height: 50px;
+    }
+
+    .myRate6 h1 {
+        font-size: 1.25rem;
+        text-align: left;
+        margin-top: var(--spacing-sm);
+    }
+    
+    .container {
+        margin: var(--spacing-md) auto;
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .card {
+        padding: 20px;
+    }
+
+    .total-rate .value-highlight {
+        font-size: 1.5rem;
+    }
+}

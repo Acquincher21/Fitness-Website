@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.top_bar1 {
+  background-color: rgba(130, 147, 251, 1);
+  color: white;
+  padding: 0px 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 2px solid white;
+  flex-wrap: wrap;
+}
+
+.top_bar_logo1 img {
+  height: 180px;
+  display: block;
+  max-width: 100%;
+}
+
+.TrackShipment {
+  margin-right: 20px;
+  font-family: 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Main tracking section */
+.track {
+  padding: 20px;
+  display: flex;
+  width: 100%;
+}
+
+.grid-container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  flex-wrap: nowrap;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 580px;
+}
+
+.details1 {
+  background-color: greenyellow;
+  color: black;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.area {
+  justify-content: space-between;
+  background-color: greenyellow;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.details input {
+  padding: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.details h2 {
+  margin: 0;
+}
+
+.track img {
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.gap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer1 {
+  text-align: center;
+  background-color: white;
+}
+
+.map iframe {
+  width: 1000px;
+  max-width: 1000px;
+  height: 650px;
+  margin-top: 20px;
+  border: 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1600px) {
+  .track {
+    margin-bottom: 100px;
+  }
+
+  .map iframe {
+    height: 500px;
+    width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Track {
+    font-size: 18px;
+  }
+
+  .top_bar_logo1 img {
+    height: 150px;
+  }
+
+  .track {
+    display: block;
+  }
+
+  .grid-container {
+    display: block;
+  }
+
+  .details {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .map iframe {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+@media (max-width: 450px) {
+  .top_bar1 {
+  display: flex;
+  }
+
+  .top_bar_logo1 img {
+    height: 100px;
+  }
+
+  .Track {
+    font-size: 14px;
+  }
+
+  .details {
+    width: 100%;
+  }
+  
+  .area {
+    width: 280px;
+  }
+
+  .map iframe {
+    height: 300px;
+  }
+}
